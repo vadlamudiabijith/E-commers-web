@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+<!------ Google Fonts ------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS-->	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+<!--External JS-->
+<script src="script.js" async></script>
+
+</head>
+
+<!----External CSS----->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-----FontAwsome------>
+<script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+
+<body>
+<!---- Bootstrap Script---->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<!--Heading-->
+<div>
+<nav class="navbar fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" ><i class="fa-solid fa-gift" style="margin-right: 6%;"></i>Glamour</a>
+
+      <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+     
+    </div>
+  </nav>
+
+
+ 
+
+
+<!-- Item Categories-->
+<section id="category">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/587547378/vector/mens-white-polo-shirt-short-sleeve.jpg?s=612x612&w=0&k=20&c=j-fi13xMBQkNTTD7u0BNUgPCD8Azp3kzlG5PkMQwPv8="  class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1266772421/video/casual-young-model-smiling-holding-hands-in-pockets-crossing-arms-and-standing-on-yellow.jpg?s=640x640&k=20&c=HEOpCXx2JNbkV_fW5mQsAg3OTTdiNhgw5kltOowk5FU=" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1128565473/photo/gray-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=NV-PuDL_FZVAAsJ26HUjpQWRQtx56jKnkhxSpM2Qrks=" class="card-img-top" alt="...">
+        </div>
+      </div>
+
+      <div class=" col">
+        <div class="card">
+          <img src="https://media.istockphoto.com/id/1373240842/photo/smiling-mid-adult-man-in-polo-shirt.jpg?s=612x612&w=0&k=20&c=loXTzsejma2wpvYqRQnGABUStfMI241vbhVO-4eJKO0=" class="card-img-top" alt="..." >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<a href="#category" class="up-icon"><i class="fa-solid fa-circle-chevron-up"></i></a>
+ 
+
+<!----------------------------------------------------------------------------------->
+<img src="/steps-line.png" style="width: 100%; height: 100%; overflow: hidden;">
+ 
+ 
+<!----------------------------------------------------------------------------------->
+<!--Filter Button-->
+<section id="hello">
+<div class = "filter-btns">
+  <a href="case study.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate" ></i> Refresh</button></a>
+   
+  <button type = "button" class = "filter-btn" id = "all">all</button>
+  <button type = "button" class = "filter-btn" id = "new">new</button>
+  <button type = "button" class = "filter-btn" id = "office-wear">office wear</button>
+  <button type = "button" class = "filter-btn" id = "t-shirts">t-shirts</button>
+  <button type = "button" class = "filter-btn" id = "offers">offers</button>
+</div>
+
+
+<!--Product Cards-->
+<section id="product-cards">
+  <div class="container-fluid">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div class=" col filter-item all new ">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/817124034/photo/handsome-young-man-smiling-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=hNcUeAc2qbCaMUCBpjwrQTWklD_8DIe4fOTL3HMM_ww=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title"> Blue polo tee</h5>
+            <p class="card-text shop-item-price"> Rs 6990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="" class="https://media.istockphoto.com/id/1097625632/photo/black-collared-shirt-design-template.jpg?s=612x612&w=0&k=20&c=uqMzASjxMVb3JSp0aeanyiyYAnve2YFLnHCFc1OG7XI=" alt="...">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title shop-item-title">Black polo tee</h5>
+            <p class="card-text shop-item-price"> Rs 5790.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/487882805/photo/young-happy-man-in-a-white-polo-shirt.jpg?s=612x612&w=0&k=20&c=yVSf_S26Y695Ut7abNmEkPFxE3QYd3pqPVgbV-arx2o=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">white polo tee</h5>
+            <p class="card-text shop-item-price"> Rs 5790.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all new">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/625308412/photo/woman-in-blue-polo-shirt-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=L3m54JXW6X9VtOI5D0-DoMR-FpEBeiWQgHU_j03dI0A=" class="card-img-top shop-item-image " alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Blue polo women tee
+              </h5>
+            <p class="card-text shop-item-price"> Rs 5990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear ">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1282564543/photo/business-man-stock-photo.jpg?s=612x612&w=0&k=20&c=Ec63uFCLBlM5IftegYm4SGHkIuVGRDxck7HjfQRRpDg=" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">combo for office</h5>
+            <p class="card-text shop-item-price"> Rs 5990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/694184490/photo/hand-crossed-confident-and-successful-young-businessman.jpg?s=612x612&w=0&k=20&c=eHWi7SC1B1MlMlpHO8EtA5_JCNBzPXTRgMbnMw5J78U=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">grey shirt </h5>
+            <p class="card-text shop-item-price">Rs 3290.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1447265985/photo/young-man-wearing-suit-and-tie-on-one-half-and-jeans-and-hoodie-on-other-half.jpg?s=612x612&w=0&k=20&c=JouN8_0VlEMy-Jyu0qqxD3_4hTIf30ghcCwNRRBvJGw=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">huddy and grey suite combo</h5>
+            <p class="card-text shop-item-price">Rs 3290.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all office-wear">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1131108124/photo/portrait-of-handsome-young-businessman.jpg?s=612x612&w=0&k=20&c=zQflps1J2d02rw7webPC4SJfziHgsOrc0FGf-_m11RQ=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">blue blazer</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.jpg?s=612x612&w=0&k=20&c=Dk9vgHFqFrwXQNfnEq8_0WN6IjQ35UysBNaMgUh4IjA=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title"> white round neck Tee</h5>
+            <p class="card-text shop-item-price">Rs 3450.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1302815072/photo/blank-black-tshirt-on-young-man-template-on-white-background.jpg?s=612x612&w=0&k=20&c=o_NfCAhYRKD7PvG3zeFxpJpikCyQxP1viVK4b35hkkc=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Round necked black Tshirt</h5>
+            <p class="card-text shop-item-price">Rs 2500.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1490616219/photo/portrait-of-handsome-young-man.jpg?s=612x612&w=0&k=20&c=09ehr2Z76fj7Ho7j5hXq-G-8lwnmhPC-wRDEJ7FPihw=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Round necked white sport tee</h5>
+            <p class="card-text shop-item-price">Rs 2990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all t-shirts">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/471188329/photo/plain-red-tee-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=h1n990JR40ZFbPRDpxKppFziIWrisGcE_d9OqkLVAC4=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Red t shirt</h5>
+            <p class="card-text shop-item-price">Rs 3990.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/488160041/photo/mens-shirt.jpg?s=612x612&w=0&k=20&c=xVZjKAUJecIpYc_fKRz_EB8HuRmXCOOPOtZ-ST6eFvQ=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Navy Blue shirt</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/907261794/photo/handsome-man.jpg?s=612x612&w=0&k=20&c=31YyQlon3lBpv7izm6h05HdwZXNiQKRX6_lkFQcTPRY=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Black Pant</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping  " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/499232450/photo/confident-elegant-business-man-with-hands-in-pockets.jpg?s=612x612&w=0&k=20&c=NW_j1fdNw5D2lotnGqunwh1CcwWdnbrbeGQV6OdFE2c=" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">white shirt</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class=" col filter-item all offers">
+        <div class="card h-100">
+          <img src="https://www.istockphoto.com/photo/handsome-man-gm912720244-251260418?searchscope=image%2Cfilm" class="card-img-top shop-item-image" alt="...">
+          <div class="card-body">
+            <h5 class="card-title shop-item-title">Blue jenes</h5>
+            <p class="card-text shop-item-price">Rs 3690.00</p>
+            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+    </div>
+
+</section>
+ 
+<!--Footer-->
+<section id="footer">
+  <div class="card text-center">
+   
+    <div class="card-body">
+      <h3 class="card-title"><i class="fa-solid fa-gift" style="margin-right: 1%;"></i>Glamour</h3>
+      <p>Thank You , Come Again !!!</p>
+    </div>
+    <div class="card-footer text-muted">
+       <p></p>
+       <p></p>
+    </div>
+  </div>
+</section>
+
+</section>
+
+ 
+
+<!--External JS-->
+<script src="script.js"></script>
+
+</body>
+</html>
