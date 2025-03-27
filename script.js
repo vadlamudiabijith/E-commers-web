@@ -1,4 +1,4 @@
-/* Image Filter Section */
+
 
 const allFilterItems = document.querySelectorAll('.filter-item');
 const allFilterBtns = document.querySelectorAll('.filter-btn');
@@ -32,7 +32,6 @@ function resetActiveBtn(){
 }
 
 
-/* Shopping Cart Section */
 if (document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded' , ready);
 }
